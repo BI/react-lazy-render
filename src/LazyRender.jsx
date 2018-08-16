@@ -134,7 +134,7 @@ var LazyRender = createReactClass({
     var childHeight = this.state.childHeight || 1;
     var childrenLength = this.getChildrenLength(nextProps);
 
-    if(!this.state.childHeight && this.getChildHeight){
+    if(!this.state.childHeight && this.getChildHeight()){
       childHeight = this.getChildHeight();
     }
 
